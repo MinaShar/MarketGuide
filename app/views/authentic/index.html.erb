@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<%= stylesheet_link_tag "Authentic/index" %>
+
+</head>
+<body>
+
+	<!-- <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"> -->
+	<form id="LoginFrm" method="post" action="/AdminLogin">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<h1>Login to Your Account</h1><br>
+				<form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				</form>
+
+				<div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				</div>
+			</div>
+		</div>
+		</form>
+
+		<div id="ForTestingIssues"></div>
+	<!-- </div> -->
+
+</body>
+
+<%= javascript_include_tag "Authentic/index" %>
+</html>

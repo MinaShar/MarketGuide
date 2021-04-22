@@ -1,0 +1,119 @@
+<!-- NEW MAP COMPONENT DESCRIPTION -->
+<div class="modal fade" id="MapComponentDescriptionModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <form id="AddNewComponentFrm">
+
+          <div class="form-group">
+
+            <label>Component type:</label>
+            <select name="ComponentType" class="form-control">
+              <option value="1">Verical wall</option>
+              <option value="2">Horizontal wall</option>
+            </select>
+
+            <input type="submit" name="submit" value="Add">
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="MapCreationConfirmMsg" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Successfully.</h4>
+      </div>
+      <div class="modal-body">
+        <p>Map created succesfully.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="AddProductLocationModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add product</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <form id="AddProductLoactionFrm">
+
+          <div class="form-group">
+
+            <label>Product:</label>
+            <select name="Product" class="form-control">
+            </select>
+
+            <input type="submit" name="submit" value="Add">
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="RegionNameModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Region Name.</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group">
+          <label for="usr">Name:</label>
+          <input type="text" class="form-control newregionname">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-default" value="Add" data-dismiss="modal">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div style="display: none;position: fixed;width: 325px;height: 150px;" id="ProductDefinitor" class="ProductDefinitorClass container-fluid well span6">
+  <div class="row-fluid">
+  <h3></h3>
+  </div>
+</div>
